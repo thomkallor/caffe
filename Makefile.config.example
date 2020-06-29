@@ -72,15 +72,15 @@ BLAS := open
 #		/usr/lib/python2.7/dist-packages/numpy/core/include
 # Anaconda Python distribution is quite popular. Include path:
 # Verify anaconda location, sometimes it's in root.
-# ANACONDA_HOME := $(HOME)/anaconda
-# PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
-		# $(ANACONDA_HOME)/include/python2.7 \
-		# $(ANACONDA_HOME)/lib/python2.7/site-packages/numpy/core/include
+ANACONDA_HOME := /root/anaconda
+PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
+		# $(ANACONDA_HOME)/include/python3.3m \
+		# $(ANACONDA_HOME)/lib/python3.3/site-packages/numpy/core/include
 
 # Uncomment to use Python 3 (default is Python 2)
-PYTHON_LIBRARIES := boost_python3 python3.3m
-PYTHON_INCLUDE := /root/anaconda/include/python3.3m \
-		  /root/anaconda/lib/python3.3/site-packages/numpy/core/include/numpy
+# PYTHON_LIBRARIES := boost_python3 python3.3m
+# PYTHON_INCLUDE := /root/anaconda/include/python3.3m \
+#		  /root/anaconda/lib/python3.3/site-packages/numpy/core/include/numpy
 
 # We need to be able to find libpythonX.X.so or .dylib.
 PYTHON_LIB := /usr/lib

@@ -78,7 +78,7 @@ PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
 		  $(ANACONDA_HOME)/lib/python3.5/site-packages/numpy/core/include
 
 # Uncomment to use Python 3 (default is Python 2)
-PYTHON_LIBRARIES := boost_python3 python3.5m
+PYTHON_LIBRARIES := boost_python35 python3.5m
 # PYTHON_INCLUDE := /root/anaconda/include/python3.3m \
 #		  /root/anaconda/lib/python3.3/site-packages/numpy/core/include/numpy
 
